@@ -1,0 +1,32 @@
+[
+  {
+    "up__ID": "550e8400-e29b-41d4-a716-446655440001",
+    "ID": "550e8400-e29b-41d4-a716-446655440201",
+    "timestamp": "2024-01-15T08:35:00.000Z",
+    "author": "john.doe@customer.com",
+    "message": "I'm unable to log into the mobile app. It keeps showing an error message.",
+    "IsActiveEntity": true,
+    "HasActiveEntity": false,
+    "HasDraftEntity": false
+  },
+  {
+    "up__ID": "550e8400-e29b-41d4-a716-446655440001",
+    "ID": "550e8400-e29b-41d4-a716-446655440202",
+    "timestamp": "2024-01-15T09:00:00.000Z",
+    "author": "jane.smith@company.com",
+    "message": "Thank you for reporting this issue. I've assigned it to our mobile team for investigation.",
+    "IsActiveEntity": true,
+    "HasActiveEntity": false,
+    "HasDraftEntity": false
+  },
+  {
+    "up__ID": "550e8400-e29b-41d4-a716-446655440002",
+    "ID": "550e8400-e29b-41d4-a716-446655440203",
+    "timestamp": "2024-01-16T09:20:00.000Z",
+    "author": "alice.wilson@customer.com",
+    "message": "Payment processing failed during checkout. Transaction ID: TXN123456",
+    "IsActiveEntity": true,
+    "HasActiveEntity": false,
+    "HasDraftEntity": false
+  }
+]

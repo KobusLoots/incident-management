@@ -1,0 +1,38 @@
+[
+  {
+    "code": "N",
+    "name": "New",
+    "descr": "New incident - not yet assigned",
+    "criticality": 2
+  },
+  {
+    "code": "A",
+    "name": "Assigned",
+    "descr": "Incident has been assigned to a processor",
+    "criticality": 2
+  },
+  {
+    "code": "I",
+    "name": "In Process",
+    "descr": "Incident is currently being worked on",
+    "criticality": 3
+  },
+  {
+    "code": "H",
+    "name": "On Hold",
+    "descr": "Incident is on hold - waiting for additional information",
+    "criticality": 2
+  },
+  {
+    "code": "R",
+    "name": "Resolved",
+    "descr": "Incident has been resolved",
+    "criticality": 1
+  },
+  {
+    "code": "C",
+    "name": "Closed",
+    "descr": "Incident has been closed",
+    "criticality": 1
+  }
+]

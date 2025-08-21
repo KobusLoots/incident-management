@@ -1,0 +1,74 @@
+[
+  {
+    "locale": "en",
+    "code": "N",
+    "name": "New",
+    "descr": "New incident - not yet assigned"
+  },
+  {
+    "locale": "en",
+    "code": "A",
+    "name": "Assigned",
+    "descr": "Incident has been assigned to a processor"
+  },
+  {
+    "locale": "en",
+    "code": "I",
+    "name": "In Process",
+    "descr": "Incident is currently being worked on"
+  },
+  {
+    "locale": "en",
+    "code": "H",
+    "name": "On Hold",
+    "descr": "Incident is on hold - waiting for additional information"
+  },
+  {
+    "locale": "en",
+    "code": "R",
+    "name": "Resolved",
+    "descr": "Incident has been resolved"
+  },
+  {
+    "locale": "en",
+    "code": "C",
+    "name": "Closed",
+    "descr": "Incident has been closed"
+  },
+  {
+    "locale": "de",
+    "code": "N",
+    "name": "Neu",
+    "descr": "Neuer Vorfall - noch nicht zugewiesen"
+  },
+  {
+    "locale": "de",
+    "code": "A",
+    "name": "Zugewiesen",
+    "descr": "Vorfall wurde einem Bearbeiter zugewiesen"
+  },
+  {
+    "locale": "de",
+    "code": "I",
+    "name": "In Bearbeitung",
+    "descr": "Vorfall wird derzeit bearbeitet"
+  },
+  {
+    "locale": "de",
+    "code": "H",
+    "name": "Wartend",
+    "descr": "Vorfall ist wartend - wartet auf zusätzliche Informationen"
+  },
+  {
+    "locale": "de",
+    "code": "R",
+    "name": "Gelöst",
+    "descr": "Vorfall wurde gelöst"
+  },
+  {
+    "locale": "de",
+    "code": "C",
+    "name": "Geschlossen",
+    "descr": "Vorfall wurde geschlossen"
+  }
+]

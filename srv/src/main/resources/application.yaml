@@ -1,0 +1,118 @@
+---
+spring:
+  web:
+    resources:
+      static-locations: file:./app/
+  config:
+    activate:
+      on-profile: default
+  sql:
+    init:
+      platform: h2
+  datasource:
+    url: jdbc:h2:mem:incident-db
+cds:
+  security:
+    mock:
+      users:
+        bob:
+          roles:
+          - support
+        alice:
+          roles:
+          - admin
+          - support
+  data-source:
+    auto-config:
+      enabled: false
+  remote:
+    services:
+      '[API_BUSINESS_PARTNER]':
+        destination:
+          name: API_BUSINESS_PARTNER
+        type: odata-v2
+        http:
+          service: "API_BUSINESS_PARTNER"
+          suffix: "/s4hanacloud/sap/opu/odata/sap/"
+          headers:
+            APIKey: "YUwj2Q4Wybza88thrVQl4pX1w1Jswggf"
+---
+spring:
+  web:
+    resources:
+      static-locations: file:./app/
+  config:
+    activate:
+      on-profile: mocked
+  sql:
+    init:
+      platform: h2
+  datasource:
+    url: jdbc:h2:mem:incident-db
+cds:
+  security:
+    mock:
+      users:
+        bob:
+          roles:
+            - support
+        alice:
+          roles:
+            - admin
+            - support
+  data-source:
+    auto-config:
+      enabled: false
+    csv:
+      paths:
+        - ../srv/external/data/**
+        - srv/external/data/**
+        - ../db/data/**
+        - db/data/**
+  application:
+    services:
+      API_BUSINESS_PARTNER-MOCKED:
+        name: "API_BUSINESS_PARTNER-mocked"
+        model: "API_BUSINESS_PARTNER"
+        serve:
+          path: "API_BUSINESS_PARTNER"
+  remote:
+    services:
+      API_BUSINESS_PARTNER:
+        destination:
+          name: mocked-remote-business-partner-destination
+---
+management:
+  endpoint:
+    health:
+      show-components: always
+      probes:
+        enabled: true
+  endpoints:
+    web:
+      exposure:
+        include: health
+  health:
+    defaults:
+      enabled: false
+    ping:
+      enabled: true
+    db:
+      enabled: true
+---
+spring:
+  config:
+    activate:
+      on-profile: sandbox
+cds:
+  remote:
+    services:
+      '[API_BUSINESS_PARTNER]':
+        destination:
+          name: API_BUSINESS_PARTNER
+        type: odata-v2
+        http:
+          service: "API_BUSINESS_PARTNER"
+          suffix: "/s4hanacloud/sap/opu/odata/sap/"
+          headers:
+            APIKey: "YUwj2Q4Wybza88thrVQl4pX1w1Jswggf"

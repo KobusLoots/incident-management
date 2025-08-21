@@ -1,0 +1,36 @@
+{
+  "welcomeFile": "/web-pages/launchpage.html",
+  "routes": [
+    {
+      "source": "^/app/(.*)$",
+      "target": "$1",
+      "localDir": ".",
+      "cacheControl": "no-cache, no-store, must-revalidate"
+    },
+    {
+      "source": "^/appconfig/",
+      "localDir": ".",
+      "cacheControl": "no-cache, no-store, must-revalidate"
+    },
+    {
+      "source": "^/web-pages/(.*)$",
+      "localDir": "static-resources"
+    },
+    {
+      "source": "^/incident-management-ui/(.*)$",
+      "target": "/nsincidents/$1",
+      "service": "html5-apps-repo-rt",
+      "authenticationType": "xsuaa",
+      "scope": [
+        "$XSAPPNAME.admin",
+        "$XSAPPNAME.support"
+      ]
+    },
+    {
+      "source": "^/odata/v4/(.*)$",
+      "target": "/odata/v4/$1",
+      "destination": "srv-api",
+      "authenticationType": "none"
+    }
+  ]
+}

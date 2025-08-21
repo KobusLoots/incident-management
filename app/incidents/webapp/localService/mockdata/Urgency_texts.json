@@ -1,0 +1,38 @@
+[
+  {
+    "locale": "en",
+    "code": "H",
+    "name": "High",
+    "descr": "High priority - requires immediate attention"
+  },
+  {
+    "locale": "en",
+    "code": "M",
+    "name": "Medium",
+    "descr": "Medium priority - should be addressed soon"
+  },
+  {
+    "locale": "en",
+    "code": "L",
+    "name": "Low",
+    "descr": "Low priority - can be addressed when time permits"
+  },
+  {
+    "locale": "de",
+    "code": "H",
+    "name": "Hoch",
+    "descr": "Hohe Priorität - erfordert sofortige Aufmerksamkeit"
+  },
+  {
+    "locale": "de",
+    "code": "M",
+    "name": "Mittel",
+    "descr": "Mittlere Priorität - sollte bald bearbeitet werden"
+  },
+  {
+    "locale": "de",
+    "code": "L",
+    "name": "Niedrig",
+    "descr": "Niedrige Priorität - kann bearbeitet werden, wenn Zeit vorhanden ist"
+  }
+]

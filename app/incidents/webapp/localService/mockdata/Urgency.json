@@ -1,0 +1,17 @@
+[
+  {
+    "code": "H",
+    "name": "High",
+    "descr": "High priority - requires immediate attention"
+  },
+  {
+    "code": "M",
+    "name": "Medium",
+    "descr": "Medium priority - should be addressed soon"
+  },
+  {
+    "code": "L",
+    "name": "Low",
+    "descr": "Low priority - can be addressed when time permits"
+  }
+]

@@ -1,0 +1,44 @@
+[
+  {
+    "ID": "550e8400-e29b-41d4-a716-446655440001",
+    "createdAt": "2024-01-15T08:30:00.000Z",
+    "createdBy": "john.doe@company.com",
+    "modifiedAt": "2024-01-15T14:45:00.000Z",
+    "modifiedBy": "jane.smith@company.com",
+    "customer_ID": "CUST001",
+    "title": "Login issue with mobile app",
+    "urgency_code": "H",
+    "status_code": "A",
+    "IsActiveEntity": true,
+    "HasActiveEntity": false,
+    "HasDraftEntity": false
+  },
+  {
+    "ID": "550e8400-e29b-41d4-a716-446655440002",
+    "createdAt": "2024-01-16T09:15:00.000Z",
+    "createdBy": "alice.wilson@company.com",
+    "modifiedAt": "2024-01-16T16:20:00.000Z",
+    "modifiedBy": "bob.johnson@company.com",
+    "customer_ID": "CUST002",
+    "title": "Payment processing error",
+    "urgency_code": "M",
+    "status_code": "I",
+    "IsActiveEntity": true,
+    "HasActiveEntity": false,
+    "HasDraftEntity": false
+  },
+  {
+    "ID": "550e8400-e29b-41d4-a716-446655440003",
+    "createdAt": "2024-01-17T10:00:00.000Z",
+    "createdBy": "mike.brown@company.com",
+    "modifiedAt": "2024-01-17T11:30:00.000Z",
+    "modifiedBy": "sarah.davis@company.com",
+    "customer_ID": "CUST003",
+    "title": "Feature request: Dark mode",
+    "urgency_code": "L",
+    "status_code": "N",
+    "IsActiveEntity": true,
+    "HasActiveEntity": false,
+    "HasDraftEntity": false
+  }
+]
