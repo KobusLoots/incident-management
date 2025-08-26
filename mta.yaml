@@ -46,7 +46,7 @@ modules:
       commands:
         - npm run build
     requires:
-      - name: incident-management-db
+      - name: db
 
   - name: incident-management-ui-deployer
     type: com.sap.application.content
