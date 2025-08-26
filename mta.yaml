@@ -134,11 +134,10 @@ modules:
           url: ${default-url}
 
 resources:
-  - name: incident-management-db
-    type: com.sap.xs.hdi-container
+  - name: db
+    type: org.cloudfoundry.existing-service
     parameters:
-      service: hana
-      service-plan: hana-cloud-trial
+      service-name: db
 
   - name: incident-management-auth
     type: org.cloudfoundry.managed-service
