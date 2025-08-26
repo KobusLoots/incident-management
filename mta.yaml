@@ -29,7 +29,7 @@ modules:
         properties:
           srv-url: ${default-url}
     requires:
-      - name: incident-management-db
+      - name: db
       - name: incident-management-auth
       - name: incident-management-destination
       - name: app-api
