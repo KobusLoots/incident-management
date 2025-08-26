@@ -36,17 +36,7 @@ modules:
         properties:
           CDS_MULTITENANCY_APPUI_URL: ~{url}
 
-  - name: incident-management-db-deployer
-    type: hdb
-    path: db
-    parameters:
-      buildpack: nodejs_buildpack
-    build-parameters:
-      builder: custom
-      commands:
-        - npm run build
-    requires:
-      - name: db
+ 
 
   - name: incident-management-ui-deployer
     type: com.sap.application.content
