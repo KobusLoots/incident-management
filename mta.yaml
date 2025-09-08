@@ -29,24 +29,14 @@ modules:
         properties:
           srv-url: ${default-url}
     requires:
-      - name: incident-management-db
+      - name: db
       - name: incident-management-auth
       - name: incident-management-destination
       - name: app-api
         properties:
           CDS_MULTITENANCY_APPUI_URL: ~{url}
 
-  - name: incident-management-db-deployer
-    type: hdb
-    path: db
-    parameters:
-      buildpack: nodejs_buildpack
-    build-parameters:
-      builder: custom
-      commands:
-        - npm run build
-    requires:
-      - name: incident-management-db
+ 
 
   - name: incident-management-ui-deployer
     type: com.sap.application.content
@@ -134,11 +124,10 @@ modules:
           url: ${default-url}
 
 resources:
-  - name: incident-management-db
-    type: com.sap.xs.hdi-container
+  - name: db
+    type: org.cloudfoundry.existing-service
     parameters:
-      service: hana
-      service-plan: hdi-shared
+      service-name: db
 
   - name: incident-management-auth
     type: org.cloudfoundry.managed-service
