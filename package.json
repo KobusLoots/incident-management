@@ -9,5 +9,8 @@
   },
   "sapux": [
     "app/incidents"
-  ]
+  ],
+  "scripts": {
+    "run-mvn-test":"./mvnw test"
+  }
 }
