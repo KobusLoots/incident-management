@@ -117,9 +117,9 @@ public class ProcessorServiceHandler implements EventHandler {
                   customer.setId(businessPartner.getId());
                   customer.setName(businessPartner.getName());
                   if (!businessPartner.getAddresses().isEmpty()
-                      && !businessPartner.getAddresses().getFirst().getEmail().isEmpty()) {
+                      && !businessPartner.getAddresses().get(0).getEmail().isEmpty()) {
                     customer.setEmail(
-                        businessPartner.getAddresses().getFirst().getEmail().getFirst().getEmail());
+                        businessPartner.getAddresses().get(0).getEmail().get(0).getEmail());
                   }
                   return customer;
                 })
@@ -177,13 +177,13 @@ public class ProcessorServiceHandler implements EventHandler {
                   customer.setLastName(bupa.getLastName());
 
                   if (!bupa.getAddresses().isEmpty()) {
-                    if (!bupa.getAddresses().getFirst().getEmail().isEmpty()) {
+                    if (!bupa.getAddresses().get(0).getEmail().isEmpty()) {
                       customer.setEmail(
-                          bupa.getAddresses().getFirst().getEmail().getFirst().getEmail());
+                          bupa.getAddresses().get(0).getEmail().get(0).getEmail());
                     }
-                    if (!bupa.getAddresses().getFirst().getPhoneNumber().isEmpty()) {
+                    if (!bupa.getAddresses().get(0).getPhoneNumber().isEmpty()) {
                       customer.setPhone(
-                          bupa.getAddresses().getFirst().getPhoneNumber().getFirst().getPhone());
+                          bupa.getAddresses().get(0).getPhoneNumber().get(0).getPhone());
                     }
                   }
                   db.run(Upsert.into(Customers_.class).entries(List.of(customer)));
