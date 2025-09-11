@@ -11,6 +11,6 @@
     "app/incidents"
   ],
   "scripts": {
-    "run-mvn-test":"./mvnw test"
+    "run-mvn-test":"chmod +x ./mvnw && ./mvnw test"
   }
 }
