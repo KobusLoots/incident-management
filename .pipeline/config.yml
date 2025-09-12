@@ -27,9 +27,13 @@ stages:
     # npmExecuteScripts: true
     # runScripts:
     # - "run-mvn-test"
+    npmExecuteLint: false
     mavenExecuteScripts: true
     runScripts:
     - test
+    goals:
+     - clean
+     - test
   Compliance:
     sonarExecuteScan: false
 steps:
