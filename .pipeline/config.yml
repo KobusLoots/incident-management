@@ -28,7 +28,7 @@ stages:
     # runScripts:
     # - "run-mvn-test"
     npmExecuteLint: false
-    mavenExecuteScripts: true
+    mavenExecute: true
     runScripts:
     - test
     goals:
