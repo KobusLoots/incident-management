@@ -29,7 +29,7 @@ stages:
     # - "run-mvn-test"
     mavenExecuteScripts: true
     runScripts:
-    - "test"
+    - test
   Compliance:
     sonarExecuteScan: false
 steps:
