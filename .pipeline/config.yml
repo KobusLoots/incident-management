@@ -1,6 +1,6 @@
 ---
 general:
-  buildTool: "mta"
+  buildTool: "maven"
 service:
   buildToolVersion: "MBTJ21N22"
   stages:
